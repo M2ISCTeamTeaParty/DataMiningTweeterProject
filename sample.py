@@ -24,3 +24,5 @@ for tweet in public_tweets:
 
 r = redis.StrictRedis(host='localhost', port=6379, db=0)
 r.set('tweet', public_tweets)
+
+#bayes
