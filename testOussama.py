@@ -44,11 +44,9 @@ for tweet in public_tweets:
 
 
 r = redis.StrictRedis(host='localhost', port=6379, db=0)
-
-#bayes
-
 r.set('tweet', tweetString)
 
 B=r.get('tweet')
 for x in B :
    print(x.text)
+
